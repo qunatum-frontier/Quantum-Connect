@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/CodeHelp.png">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="stylesheet" href="tutorial.css">
+    <script src="prism.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <span id="wm"><a href="../index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title">CSS - CASCADING STYLE SHEET<span>
+    </div>
+    <h2 id="q">What is CSS?</h2>
+    <p>
+        CSS stands for Cascading Style Sheets. It is a stylesheet language that is used to describe the visual presentation of a web page written in HTML (Hypertext Markup Language).
+        HTML creates the structure of the page, while CSS adds styling to that structure. This tutorial assumes that you have prior knowledge of HTML. If that's not the case, you can follow the <a href="html.html">HTML tutorial</a> HTML tutorial first.
+        <br><br>CSS provides a wide array of properties and values that allow fine-tuning of the visual aspects of a webpage. It supports responsive design by enabling the creation of styles for different screen sizes and devices using media queries. Additionally, CSS can be used for animations, transitions, and creating layouts using techniques like Flexbox or Grid.
+    </p>
+        <h3>Key Features of CSS:</h3>
+        <ul style="list-style-type:none;">
+            <li>Styles and layouts of web pages.</li>
+            <li>Works alongside HTML and XML documents.</li>
+            <li>Enables responsive design for different screen sizes.</li>
+            <li>Supports interactive effects like hover states and animations.</li>
+            <li>CSS is now modularized, with ongoing updates rather than version numbers.</li>
+            <li>Allows reusability of the same rules across multiple HTML documents.</li>
+        </ul>
+    <hr>
+    <div class="container">
+            <h2>Font Properties</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Font Family: </b><span class="desc">The font-family attribute helps the user change the font styles. There are a lot of fonts available such as 'Sans Serif', 'Times New Roman', 'Geneva', 'Arimo' etc. In the follwing code, the main font is Segoe UI and the others will be used if and only if the browser is not compatible with the main font type.</span>
+                    <pre class="language-css"><code>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</code></pre>
+                    <span class="desc">We can also use fonts from Google Fonts by specifying the url in the following format and then we can directly use the font families.</span>
+                    <pre class="language-css"><code>@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=swap');</code></pre>
+                </li>
+                <li>
+                    <b>Font Style: </b><span class="desc">This feature helps us make the fonts either italic, oblique or keep it normal.</span>
+                    <pre class="language-css"><code>font-style: italic;
+font-style: oblique;
+font-style: normal;</code></pre>
+                </li>
+                <li>
+                    <b>Font Weight: </b><span class="desc">This property is used to set the thickness of the font. It can be given a numeric value or can be bold/bolder and so on.</span>
+                    <pre class="language-css"><code>font-weight: bold;
+font-weight: bolder;
+font-weight: lighter;
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400;
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;
+font-weight: 800;
+font-weight: 900;</code></pre>
+                </li>
+                <li>
+                    <b>Font Size: </b><span class="desc">This property helps us control the font size. It can take numeric values as well as values such as small, large, larger etc.</span>
+                    <pre class="language-css"><code>font-size: larger;
+font-size: smaller;
+font-size: 24px;</code></pre>
+                </li>
+                <li>
+                    <b>Font: </b><span class="desc">We can use the shorthand property and combine all the above styles into one parameter</span>
+                    <pre class="language-css"><code>font: style variant weight size family;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Text Properties</h2>
+            <p class="desc">Text properties allow one to manipulate alignment, spacing, decoration, indentation, etc., in the document.</p>
+            <br>
+            <ol>
+                <li>
+                    <b>Text Align: </b><span class="desc">This attribute helps us easily align text and makes the webpage organised.</span>
+                    <pre class="language-css"><code>text-align: justify;
+text-align: center;
+text-align: right;
+text-align: left;</code></pre>
+                </li>
+                <li>
+                    <b>Text Decoration: </b><span class="desc">Using this property we can decorate text by putting different styles of underlines.</span>
+                    <pre class="language-css"><code>text-decoration: underline;
+text-decoration: overline;
+text-decoration: line-through;</code></pre>
+                </li>
+                <li>
+                    <b>Word Spacing: </b><span class="desc">This property helps us assign a predifined spacing between to words hence the web page is neat and clean.</span>
+                    <pre class="language-css"><code>word-spacing: 0.25em;</code></pre>
+                </li>
+                <li>
+                    <b>Line Height: </b><span class="desc">This property controls the height of a line.</span>
+                    <pre class="language-css"><code>line-height: normal;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Background Properties</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Background Image: </b><span class="desc">This property helps us assign an image to the background.</span>
+                    <pre class="language-css"><code>background-image: url("sample.png");</code></pre>
+                </li>
+                <li>
+                    <b>Background Position: </b><span class="desc">The image pocition on a web page can be specified by making use of this property.</span>
+                    <pre class="language-css"><code>background-position: right top;
+background-position: left top;
+background-position: right bottom;
+background-position: left bottom;</code></pre>
+                </li>
+                <li>
+                    <b>Background Size: </b><span class="desc">This property controls the parameter whether the background image should cover the entire box or should it remain contained.</span>
+                    <pre class="language-css"><code>background-size: cover;
+background-size: contain;</code></pre>
+                </li>
+                <li>
+                    <b>Background Attachment: </b><span class="desc">The image, in case of an overflow can be given this property to determine whether a scrollbar should be present or not.</span>
+                    <pre class="language-css"><code>background-attachment: scroll;
+background-attachment: fixed;</code></pre>                    
+                </li>
+                <li>
+                    <b>Background Color: </b><span class="desc">This property is quite self-explanatory, we use it to add a background color.</span>
+                    <pre class="language-css"><code>background-color: fuchsia;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Border Properties</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Border Width: </b><span class="desc">To control width of the border. We can do it for all the borders all together and we also have the option to assign border width for individual borders.</span>
+                    <pre class="language-css"><code>border-width: 5px;</code></pre>
+                </li>
+                <li>
+                    <b>Border Style: </b><span class="desc">The border can be styles in various ways, here are the following codes.</span>
+                    <pre class="language-css"><code>border-style: solid;
+border-style: dotted;
+border-style: dashed;
+border-style: double;</code></pre>
+                </li>
+                <li>
+                    <b>Border Color: </b><span class="desc">To assign a color to the border.</span>
+                    <pre class="language-css"><code>border-color: aqua;</code></pre>
+                </li>
+                <li>
+                    <b>Border Radius: </b><span class="desc">To add curvature to the border or we may as well say that to rounden the edges.</span>
+                    <pre class="language-css"><code>border-radius: 15px;</code></pre>
+                </li>
+                <li>
+                    <b>Border: </b><span class="desc">Shorthand property incorporating all the border properties.</span>
+                    <pre class="language-css"><code>border: width style color;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Box Model</h2>
+            <p class="desc">In laymen's terms, the CSS box model is a container that wraps around every HTML element. It consists of margins, borders, padding, and the actual content. It is used to create the design and layout of web pages.</p>
+            <br>
+            <ol>
+                <li>
+                    <b>Float: </b><span class="desc">Determines the positioning of a container / &ltdiv&gt</span>
+                    <pre class="language-css"><code>float: none;
+float: left;
+float: right;</code></pre>
+                </li>
+                <li>
+                    <b>Clear: </b><span class="desc">To clear the float of an element.</span>
+                    <pre class="language-css"><code>clear: both;
+clear: left;
+clear: right;
+clear: none;</code></pre>
+                </li>
+                <li>
+                    <b>Display: </b><span class="desc">The display property is used to determine how an element is displayed on a page, and can have a significant impact on the layout and appearance of a document. For example, setting the display property of an element to block will cause it to take up a full line on the page, while setting it to inline will cause it to be displayed next to other elements without breaking to a new line.</span>
+                    <pre class="language-css"><code>display: block;
+display: inline;
+display: inline-block;
+display: none;</code></pre>
+                </li>
+                <li>
+                    <b>Height: </b><span class="desc">xxxxxxxx</span>
+                    <pre class="language-css"><code>height: fit-content;
+                        height: min-content;
+                        height: max-content;
+                        height: 100%;
+                        height: auto;
+                    </code></pre>
+                </li>
+                <li>
+                    <b>Width: </b><span class="desc">xxxxxxxx</span>
+                    <pre class="language-css"><code>width: auto;</code></pre>
+                </li>
+                <li>
+                    <b>Margin: </b><span class="desc">xxxxxxxx</span>
+                    <pre class="language-css"><code>margin: top right bottom left;</code></pre>
+                </li>
+                <li>
+                    <b>Overflow: </b><span class="desc">xxxxxxxx</span>
+                    <pre class="language-css"><code>overflow: hidden;</code></pre>
+                </li>
+                <li>
+                    <b>Visibility: </b><span class="desc">xxxxxxxx</span>
+                    <pre class="language-css"><code>visibility: visible;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Colors</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Color: </b><span class="desc"></span>
+                    <pre class="language-css"><code>color: cornsilk; /*Using predefined colors*/
+color: rgb(78, 0, 78); /*Using rgb values*/
+color: hsl(); /*Using hsl values*/
+color: #99FF67; /*Using hex codes*/</code></pre>
+                </li>
+                <li>
+                    <b>Opacity: </b><span class="desc">xxxxxxxxx</span>
+                    <pre class="language-css"><code>opacity: 4;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Template Layout</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Box-Align: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>box-align: start;</code></pre>
+                </li>
+                <li>
+                    <b>Box-Direction: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>box-direction: normal;</code></pre>
+                </li>
+                <li>
+                    <b>Box-Flex: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>box-flex: normal;</code></pre>
+                </li>
+                <li>
+                    <b>Box-Sizing: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>box-sizing: margin-box;</code></pre>
+                </li>
+                <li>
+                    <b>Width: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>max-width: 800px;
+min-width: 500px;</code></pre>
+                </li>
+                <li>
+                    <b>Height: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>max-height: 100px;
+min-height: 80px;</code></pre>
+                </li>
+            </ol>
+            <br>
+            <h2>Table Styling</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Border-Collapse: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>border-collapse: separate;</code></pre>
+                </li>
+                <li>
+                    <b>Empty-Cells: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>empty-cells: show;</code></pre>
+                </li>
+                <li>
+                    <b>Border-Spacing: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>border-spacing: 2px;</code></pre>
+                </li>
+                <li>
+                    <b>Table-Layout: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>table-layout: auto;</code></pre>
+                </li>
+                <li>
+                    <b>Caption-Side: </b><span class="desc">xxxxxxx</span>
+                    <pre class="language-css"><code>caption-side: bottom;</code></pre>
+                </li>
+            </ol>
+    </div>
+</body>
+</html>

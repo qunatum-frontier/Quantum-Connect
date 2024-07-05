@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Tutorial</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/CodeHelp.png">
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <span id="wm"><a href="../index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 37vw;">JAVA<span>
+    </div>
+    <h2 id="q">What is Java?</h2>
+    <p>
+        C++ is a powerful and versatile programming language that's often praised for its efficiency and performance. It's an extension of the C programming language and incorporates object-oriented programming (OOP) features. C++ allows developers to write code that can directly interact with hardware, making it suitable for system-level programming, such as operating systems or device drivers.
+        <br>C++ is widely used in various domains such as game development, where its speed and ability to manage system resources efficiently are crucial. It's also prevalent in fields like finance, embedded systems, scientific research, and building high-performance software where control over hardware and memory is essential.The language continues to evolve with each new standard, introducing modern features while maintaining backward compatibility. C++ remains a fundamental language in the realm of programming due to its power, performance, and versatility across a wide range of applications.
+    </p>
+    <hr>
+    <div class="container">
+        <h2>Introduction</h2>
+        <br>
+        <ol>
+            <li>
+                <b>Boilerplate Template: </b><span class="desc">Here is the first program in C++ which you can execute. This will print the 'Hello World' statement. 'import' keyword is used to add the packages to java file. After import statement we declare the class and main function.</span>
+                <pre class="language-java"><code>import java.io.*;
+public class Sample{
+    public static void main(){
+        System.out.println("Hello World");
+    }
+}</code></pre>
+            </li>
+            <li>
+                <b>Errors: </b><span class="desc">There are two types of errors, <b>Compile Time error</b> and <b>Run Time error</b></span>
+                <pre class="language-java"><code>void main(){
+//Compile Time Error
+System.out.println("Missing Semi Colon")
+//Run Time Error - due to division by zero
+int value = 7/0;
+}</code></pre>
+            </li>
+            <li>
+                <b>Comments: </b><span class="desc">Comments are used to explain a portion of the code. They are not executed while the program is being compiled.</span>
+                <pre class="language-java"><code>//Single Line Comment
+/*
+Multiline Comment
+*/</code></pre>
+            </li>
+            <li>
+                <b>Statements: </b><span class="desc">A statement is a basic unit of compilation in a C++ program. Every C++ program is a collection of statements organized in such a way to achieve a goal. All the statements end with a ';'. Statements are executed in order from top to bottom when we run the program. Execution keeps going until there is a statement causing the program to terminate or run another sequence of statements.</span>
+                <pre class="language-java"><code>//These are all examples of statements in a C++ program
+int n1=3;
+int n2=7;
+int sum=n1+n2;</code></pre>
+            </li>
+            <li>
+                <b>Input/Output: </b><span class="desc"><b>Scanner class</b> is used to take the input from the user, whereas we use <b>System.out.print("");</b> to display the output.</span>
+                <pre class="language-java"><code>import java.util.Scanner; //import the utility package which contains Scanner class
+public class input_output{
+    public static void main(){
+        Scanner sc=new Scanner (System.in); //Create a Scanner object
+        //Printing Output
+        System.out.println("Enter your first name and age");
+        String name=sc.next();
+        int age=sc.nextInt();
+    }
+}</code></pre>
+                    <span class="desc">In order to accept Strings with blank spaces we use <b>sc.nextLine()</b></span>
+                    <pre class="language-cpp"><code>//Data with Spaces
+System.out.println("Enter your full name -");
+String full_name=sc.nextLine();</code></pre>
+            </li>
+        </ol>
+        <br>
+            <h2>Variables and Data Types</h2>
+            <br>
+            
+            <h2>Operations on Data</h2>
+            <h2>Flow Control</h2>
+            <h2>Loops</h2>
+            <h2>Arrays</h2>
+            <h2>Pointers</h2>
+    </div>
+</body>
+</html>

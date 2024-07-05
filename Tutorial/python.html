@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/CodeHelp.png">
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <script src="prism.js"></script>
+</head>
+
+<body>
+    <div class="heading">
+        <span id="wm"><a href="../index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 37vw;">Python<span>
+    </div>
+    <h2 id="q">What is Python?</h2>
+    <p>
+
+        Python is a high-level, versatile programming language known for its simplicity, readability, and extensive
+        community support. Created by Guido van Rossum and first released in 1991, Python emphasizes code readability
+        and productivity. Its syntax allows developers to express concepts in fewer lines of code than languages like
+        C++ or Java, promoting a clean and maintainable codebase. Python is dynamically typed and supports multiple
+        programming paradigms, including procedural, object-oriented, and functional programming. Widely used for web
+        development, data science, artificial intelligence, automation, and more, Python's extensive standard library
+        and third-party packages contribute to its popularity. The language's versatility, ease of learning, and broad
+        applicability make it a preferred choice for beginners and seasoned developers alike in a diverse range of
+        industries.
+    </p>
+    <hr>
+    <div class="container">
+        <h2>Introduction</h2>
+        <br>
+        <ol>
+            <li>
+                <b>Input Output: </b><span class="desc">input (): This function first takes the input from the user and
+                    converts it into a string. The
+                    type of the returned object always will be &lt;class 'str'&gt;.</span>
+                <pre class="language-python"><code>name = input(&#39;What is your name?\n&#39;)     # \n ---&gt; newline  ---&gt; It causes a line break
+print(name)
+# This line will automatically add a new line before the
+# next print statement
+print (&quot;GeeksForGeeks is the best platform for DSA content&quot;)
+
+# This print() function ends with &quot;**&quot; as set in the end argument.
+print (&quot;GeeksForGeeks is the best platform for DSA content&quot;, end= &quot;**&quot;)
+print(&quot;Welcome to GFG&quot;)
+</code></pre>
+            </li>
+            <li>
+                <b>Operators: </b><span class="desc">Example: The code performs basic arithmetic operations with the
+                    values of 'a&#39; and 'b&#39;. It
+                    adds('+&#39;), subtracts ('-&#39;), multiplies (*&#39;), computes the remainder('%&#39;), and raises
+                    a to the
+                    power of 'b(**)''. The results of these operations are printed.</span>
+                <pre class="language-python"><code>a = 9
+b = 4
+add = a + b
+sub = a - b
+mul = a * b
+mod = a % b
+p = a ** b
+print(add) #13
+print(sub) #5
+print(mul) #36
+print(mod) #1
+print(p) #6561
+</code></pre>
+            </li>
+        </ol>
+        <br>
+        <h2>Sequence Data Type in Python</h2>
+        <p>The sequence Data Type in Python is the ordered collection of similar or different data
+            types. Sequences allow storing of multiple values in an organized and efficient fashion.
+            There are several sequence types in Python –</p>
+        <br>
+        <ol>
+            <li>
+                <b>Python String: </b><span class="desc">In this example, we will define a string in Python and access
+                    its characters using positive
+                    and negative indexing. The 0th element will be the first character of the string whereas the -
+                    1th element is the last character of the string.</span>
+                <pre class="language-python"><code>String1 = &quot;GeeksForGeeks&quot;
+print(&quot;Initial String: &quot;)
+print(String1)
+
+# Printing First character
+print(&quot;\nFirst character of String is: &quot;)
+print(String1[0])
+
+# Printing Last character
+print(&quot;\nLast character of String is: &quot;)
+print(String1[-1])</code></pre>
+            </li>
+            <li>
+                <b>Python List: </b><span class="desc"></span>
+                <pre class="language-python"><code>List = [&quot;Geeks&quot;, &quot;For&quot;, &quot;Geeks&quot;]
+
+# accessing a element from the
+# list using index number
+print(&quot;Accessing a element from the list&quot;)
+print(List[0])
+print(List[2])</code></pre>
+            </li>
+            <li>
+                <b>Python Tuples: </b><span class="desc">Tuples are immutable, and usually, they contain a sequence of
+                    heterogeneous elements that
+                    are accessed via unpacking or indexing (or even by attribute in the case of named tuples).
+                    Lists are mutable, and their elements are usually homogeneous and are accessed by
+                    iterating over the list.</span>
+                <pre class="language-python"><code># Creating an empty Tuple
+Tuple1 = ()
+print(&quot;Initial empty Tuple: &quot;)
+print(Tuple1)
+ 
+# Creating a Tuple
+# with the use of string
+
+Tuple1 = (&#39;Geeks&#39;, &#39;For&#39;)
+print(&quot;\nTuple with the use of String: &quot;)
+print(Tuple1)
+ 
+# Creating a Tuple with
+# the use of list
+list1 = [1, 2, 4, 5, 6]
+print(&quot;\nTuple using List: &quot;)
+print(tuple(list1))
+ 
+# Creating a Tuple
+# with the use of built-in function
+Tuple1 = tuple(&#39;Geeks&#39;)
+print(&quot;\nTuple with the use of function: &quot;)
+print(Tuple1)</code></pre>
+            </li>
+        </ol>
+        <br>
+        <h2>Functions</h2>
+        <br>
+        <b>Creating a Function in Python: </b><span class="desc">We can define a function in Python, using
+            the def keyword. We can add any type of
+            functionalities and properties to it as we require.</span>
+        <pre class="language-python"><code># A simple Python function
+def fun():
+    print(&quot;Welcome to GFG&quot;)
+# Driver code to call a function
+fun()</code></pre>
+    </div>
+</body>
+
+</html>

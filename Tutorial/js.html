@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial</title>
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="prism.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/CodeHelp.png">
+    <script src="prism.js"></script>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- TEXTUAL CONTENT-->
+    <div class="heading">
+        <span id="wm"><a href="../index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 35vw;">JAVASCRIPT<span>
+    </div>
+    <h2 id="q">What is JavaScript?</h2>
+    <p>
+        JavaScript is a versatile programming language primarily used for creating dynamic content on webpages. Originally developed to add interactivity to web pages, it has evolved into a robust language that can run both on the client-side (in the user's browser) and server-side (using environments like Node.js).As a client-side language, JavaScript enables developers to manipulate HTML and CSS, allowing for the creation of interactive elements like forms, animations, dynamic page content updates without refreshing, and responsive user interfaces.
+        <br>In a nutshell:
+        <ul>
+            <li>1. <b>Event Handling:</b> It allows developers to respond to user actions like clicks, mouse movements, or keyboard inputs, making web pages more interactive.</li>
+            <li>2. <b>DOM Manipulation:</b> JavaScript can access and modify the Document Object Model (DOM), enabling dynamic changes to the structure and content of a webpage after it has loaded.</li>
+            <li>3. <b>Extensibility:</b> JavaScript can be extended through libraries and frameworks like React, Angular, and Vue.js, providing additional functionalities and simplifying complex tasks.</li>
+            <li>4. <b>Server-Side Development:</b> With Node.js, JavaScript can run on servers, enabling developers to build server-side applications, APIs, and perform tasks traditionally done with other server-side languages.</li>
+        </ul>
+    </p>
+    <hr>
+    <div class="container">
+        <h2>JS Variables</h2>
+        <br>
+        <ol>
+            <li>
+                <b>Variable Declaration: </b><span class="desc">We use the keyword 'var' followed by the variable name. We can instantly initialize the variable as well by following the syntax shown below.</span>
+                <pre class="language-js"><code>var a=;
+var x = 10; // global scope
+let a = 5; // local scope
+const c = 4; // const</code></pre>
+            </li>
+            <li>
+                <b>Data Types: </b><span class="desc"></span>
+                <pre class="language-js"><code>//primitive datatypes
+typeof 5 = number;
+typeof "string1" = string;
+typeof true = boolean;
+typeof [1,2,3] = arrays;
+// Object
+typeof Obj = {
+    name: "ram",
+    age: = "13"
+};  
+typeof null = Obj;</code></pre>
+            </li>
+            <li>
+                <b>Operators: </b><span class="desc">Arithmetic operators (e.g. +, -, *, /, %)
+                    Comparison operators (e.g. >, <, >=, <=, ==, !=)
+                    Logical operators (e.g. &&, ||, !)
+                    Assignment operators (e.g. =, +=, -=, *=, /=)
+                    Conditional (ternary) operator (e.g. ?:)</span>
+                <pre class="language-js"><code>3 == "3" true //compares only values
+3 === "3" false //compares data types</code></pre>
+            </li>
+        </ol>
+        <h2>JS Basics</h2>
+        <br>
+        <h2>JS Objects</h2>
+        <br>
+        <h2>Document Object Modulation / Browser Object Modulation</h2>
+        <br>
+        <ol>
+            <li>
+                <b>Window Object: </b><span class="desc">The JavaScript window object represents the current browser window or tab that is open in a web browser. It is a global object that provides access to various properties and methods related to the browser window.</span>
+                <pre class="language-js"><code>window.location.href = "https://www.example.com";</code></pre>
+            </li>
+            <li>
+                <b>Children: </b><span class="desc">JS provides a feature wherein we can search for children of a particular tag.</span>
+                <pre class="language-js"><code>console.log(document.body.firstChild) //shows the first child node of the &ltbody&gt, it can be text, element, comment node
+console.log(document.body.childNodes) //shows all the child nodes of the &ltbody&gt
+console.log(document.body.lastChild) //shows the last child node of an element of the &ltbody&gt
+console.log(document.head.childNodes) //shows all the child nodes of the &lthead&gt</code></pre>
+            </li>
+            <li>
+                <b>Siblings and Parents</b><span class="desc"></span>
+                <pre class="language-js"><code>let a=document.body.firstChild
+console.log(a.parentNode) //in this case it shows body since a is first child of body
+console.log(document.element.parentNode) //return either text node, comment node or element node
+console.log(document.element.parentElement) //returns element node only</code></pre>
+            </li>
+            <li>
+                <b>Element only Navigation: </b><span class="desc">Sometimes it is necessary to apply the filter of Element Only navigation in order to obtain elements only and eliminate texts and comments from conisderation.</span>
+                <pre class="language-html"><code>&ltbody&gt
+    &ltnav&gt
+        &ltul&gt
+            &ltli&gtHome&lt/li&gt
+            &ltli&gtAbout Me&lt/li&gt
+        &lt/ul&gt
+    &lt/nav&gt
+&lt/body&gt</code></pre>
+                <pre class="language-js"><code>let b=document.body
+console.log("The first child of b is ", b.firstChild) //#text
+console.log("The first element child of b is ", b.firstElementChild) //nav</code></pre>
+            </li>
+            <li>
+                <b>Table Navigation: </b><span class="desc">JS offers a variety of tags for us to navigate through a table. Some of them are listed below.</span>
+                <pre class="language-js"><code>let t=document.body.firstElementChild.firstElementChild;
+console.log(t); //returns &lttable&gt
+console.log(t.rows) //HTMLCollection(no. of rows) [tr, tr, tr, ...]
+console.log(t.caption) //returns &ltcaption&gt
+console.log(t.tHead) //returns &ltthead&gt 
+console.log(t.tFoot) //return &lttfoot&gt
+console.log(t.tHead.firstElementChild) //returns first element child of &ltthead&gt which is &lttr&gt
+console.log(t.rows[2].rowIndex) //2</code></pre>
+            </li>
+            <li>
+                <b>Searching in DOM: </b><span class="desc">This is one of the most important features of JS which allows us to traverse through the HTML document and extract tags, classes and ids and then we can add styles and features during runtime.</span>
+                <pre class="language-js"><code>let cn=document.getElementsByClassName("box")[0] //the[0] indicates index of the class
+let i=document.getElementById("first") //used to extract element using id
+let qsAll=document.querySelectorAll(".box") //for query selector we must use ".class" and "#id" to define
+let tn=document.getElementsByTagName("a"); //for extract elements by passing tag name, anchor tag in this example</code></pre>
+            </li>
+            <li>
+                <b>Matches, Closest, Contains</b><span class="desc"></span>
+                <pre class="language-html"><code>&ltbody&gt
+    &ltdiv class="box" id="id1"&gt
+        This is element 1
+        &ltspan id="sp1"&gtSpan 1&lt/span&gt
+    &lt/div&gt
+    &ltdiv class="box" id="id2"&gt
+        This is element 2
+    &lt/div&gt
+&lt/body&gt</code></pre>
+                <pre class="language-js"><code>let id1=document.getElementById("id1");
+let sp1=document.getElementById("sp1");
+console.log(id1.matches(".containers")); //false
+console.log(id1.matches(".box")); //true
+console.log(sp1.closest(".box")); //div.#id1.box
+console.log(sp1.closest("#sp1")); //&ltspan&gt id="sp1">Span 1&lt/span&gt
+console.log(id1.contains(sp1)); //true
+console.log(sp1.contains(id1)); //false</code></pre>
+            </li>
+            <li>
+                <b>inner/outer HTML: </b><span class="desc">innerHTML is only valid for element nodes, for other nodes we can use nodeValue or data. It is basically used to get the code inside a HTML tag. outerHTML on the other hand comprises of both the elements itself and innerHTML.</span>
+                <pre class="language-html"><code>&ltbody&gt
+    Hello World! 
+    &ltspan id="first"&gt&ltb&gtHIII&lt/b&gtHey, I am a span&lt/span&gt
+&lt/body&gt</code></pre>
+<pre class="language-js"><code>console.log(first.innerHTML) //&ltb&gtHIII&lt/b&gtHey, I am a span
+    //as we can see, the above statement will print the html tags inside &ltspan&gt
+first.innerHTML="&lti&gtHey, I am a span&lt/i&gt"
+console.log(first.innerHTML) //Text is now converted into italics
+console.log(first.outerHTML) //&ltspan id="first"&gt&lti&gtHey, I am a span&lt/i&gt&lt/span&gt
+    //since we use outerHTML, we also see that %ltspan&gt is printed along with the content inside it
+console.log(document.body.textContent)
+    //textContent = provides access to the text inside the element only 
+// Hello World! 
+// Hey, I am a span</code></pre>
+            </li>
+            <li>
+                <b>Attribute Methods: </b><span class="desc"></span>
+                <pre class="language-html"><code>&ltbody&gt
+&ltdiv id="first" class="attribute_method" data-game="game_name" data-player="player_name"&gt
+    Hey I am first container
+&lt/div&gt
+Hello World
+&lt/body&gt</code></pre>
+<pre class="language-js"><code>let first=document.getElementById("first")
+let a=first.getAttribute("class")
+    //To check whether HTML code has an attribute or not 
+console.log(first.hasAttribute("style")) //false
+console.log(first.hasAttribute("class")) //true
+    //Operations using Attribute method
+first.setAttribute("class", "new_name") //class changes from attribute_method to new_name
+first.removeAttribute("class") //class new_name is removed
+    //Using data-set
+console.log(first.dataset) //DOMStringMap {game: 'game_name', player: 'player_name'}
+console.log(first.dataset.game) //game_name
+console.log(first.dataset.player) //player_name</code></pre>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

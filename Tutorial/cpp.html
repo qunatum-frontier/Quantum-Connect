@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Tutorial</title>
+    <link rel="icon" type="image/x-icon" href="../Assets/CodeHelp.png">
+    <link rel="stylesheet" href="tutorial.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+</head>
+<body>
+    <div class="heading">
+        <span id="wm"><a href="../index.html">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 37vw;">C++<span>
+    </div>
+    <h2 id="q">What is C++?</h2>
+    <p>
+        C++ is a powerful and versatile programming language that's often praised for its efficiency and performance. It's an extension of the C programming language and incorporates object-oriented programming (OOP) features. C++ allows developers to write code that can directly interact with hardware, making it suitable for system-level programming, such as operating systems or device drivers.
+        <br>C++ is widely used in various domains such as game development, where its speed and ability to manage system resources efficiently are crucial. It's also prevalent in fields like finance, embedded systems, scientific research, and building high-performance software where control over hardware and memory is essential.The language continues to evolve with each new standard, introducing modern features while maintaining backward compatibility. C++ remains a fundamental language in the realm of programming due to its power, performance, and versatility across a wide range of applications.
+    </p>
+    <hr>
+    <div class="container">
+        <h2>Introduction</h2>
+        <br>
+        <ol>
+            <li>
+                <b>Boilerplate Template: </b><span class="desc">Here is the first program in C++ which you can execute. This will print the 'Hello World' statement.</span>
+                <pre class="language-cpp"><code>#import &ltiostream&gt
+int main(){
+    std::out &lt&lt "Hello World" &lt&lt std::endl;
+    return 0;
+}</code></pre>
+            </li>
+            <li>
+                <b>Errors: </b><span class="desc">There are two types of errors, <b>Compile Time error</b> and <b>Run Time error</b></span>
+                <pre class="language-cpp"><code>int main(){
+//Compile Time Error
+std::cout &lt&lt "Missing Semi Colon" &lt&lt std::endl
+//Run Time Error - due to division by zero
+int value = 7/0;
+}</code></pre>
+            </li>
+            <li>
+                <b>Comments: </b><span class="desc">Comments are used to explain a portion of the code. They are not executed while the program is being compiled.</span>
+                <pre class="language-cpp"><code>//Single Line Comment
+/*
+Multiline Comment
+*/</code></pre>
+            </li>
+            <li>
+                <b>Statements: </b><span class="desc">A statement is a basic unit of compilation in a C++ program. Every C++ program is a collection of statements organized in such a way to achieve a goal. All the statements end with a ';'. Statements are executed in order from top to bottom when we run the program. Execution keeps going until there is a statement causing the program to terminate or run another sequence of statements.</span>
+                <pre class="language-cpp"><code>//These are all examples of statements in a C++ program
+int n1=3;
+int n2=7;
+int sum=n1+n2;</code></pre>
+            </li>
+            <li>
+                <b>Input/Output: </b><span class="desc"><b>std::cout</b> is used to display the output, whereas we use <b>std::cin</b> to take input from the user.</span>
+                <pre class="language-cpp"><code>//Taking input
+int age;
+std::string name;
+std::cout &lt&lt "Enter your first name and age" &lt&lt std::endl;
+std::cin &gt&gt name; //Only one word string accepted
+std::cin &gt&gt age;</code></pre>
+                    <span class="desc">In order to accept Strings with blank spaces we use <b>std::getline</b></span>
+                    <pre class="language-cpp"><code>//Data with Spaces
+std::string full_name;
+std::cout &lt&lt "Enter your full name -" &lt&lt std::endl;
+std::getline(std::cin, full_name);</code></pre>
+            </li>
+        </ol>
+        <br>
+            <h2>Variables and Data Types</h2>
+            <br>
+            <ol>
+                <li>
+                    <b>Number Systems: </b><span class="desc">C++ provides support for the user to deal with different number systems by using suitable prefixes as shown in the follwoing code.</span>
+                    <pre class="language-cpp"><code>int dec_num = 15; //Decimal
+int oct_num = 017; //Octal
+int hex_num = 0x0f; //Hexadecimal
+int bin_num = 0b00001111; //Binary
+std::cout << "15 (Decimal) : " << dec_num << std::endl; //15
+std::cout << "17 (Octal) : " << oct_num << std::endl; //15
+std::cout << "0F (Hexadecimal) : " << hex_num << std::endl; //15
+std::cout << "00001111 (Binary) : " << bin_num << std::endl; //15</code></pre>
+                </li>
+                <li>
+                    <b>Integers and Initialization: </b><span class="desc">Integers are stored using the data-type int. The maximum size of int is 4 bytes. An integer value can be initialized in various ways, some of which have been listed. </span>
+                    <pre class="language-cpp"><code>//Variable Braced Initialization
+int garbage; //Stores a garbage value
+int default {}; //0 is assigned by default
+int a {7};
+int b {3};
+int sum {a+b}; //Using expressions to initialize.
+int err {2.9}; //This will display an error or warning since int cannot store double values.</code></pre>
+                    <pre class="language-cpp"><code>//Functional Variable Initialization
+int default (); //0 is assigned by default
+int a (7);
+int b (3);
+int sum (a+b); //Using expressions to initialize.
+int err (2.9); //Information will be lost as the value will be truncated to 2 and no warning will be displayed.</code></pre>
+                    <pre class="language-cpp"><code>//Assignment Initialization
+int a=7;
+int b=3;
+int sum=a+b; //Using expressions to initialize.
+int err=2.9; //Information will be lost as the value will be truncated to 2 and no warning will be displayed.</code></pre>
+                        <span class="desc">We can also make use of the <b>sizeof()</b> function to print the size of a variable or data type.</span>
+                        <pre class="language-cpp"><code>std::cout &lt&lt "Size of int is " &lt&lt sizeof(int) &lt&lt "bytes" &lt&lt std::endl;
+//Output - Size of int is 4 bytes</code></pre>
+                </li>
+                <li>
+                    <b>Integer Modiefiers: </b>
+                </li>
+            </ol>
+            <h2>Operations on Data</h2>
+            <h2>Flow Control</h2>
+            <h2>Loops</h2>
+            <h2>Arrays</h2>
+            <h2>Pointers</h2>
+    </div>
+</body>
+</html>
