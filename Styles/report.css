@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+        *{
+            font-family: rethink sans;
+        }
+        body{
+            /* background-color: rgb(252, 220, 252); */
+            background-color: black;
+            margin: 0px;
+            color: white;
+        }
+        div.heading{
+            padding: 20px;
+            background-color: rgb(25, 25, 112);
+            color: yellow;
+        }
+        a{
+            text-decoration: none;
+        }
+        table{
+            font-size: 20px;
+        }
+        #wm{
+            font-family: rethink sans;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        #title{
+            font-family: rethink sans;
+            font-size: 32px;
+            font-weight: 900;
+            margin: 20vw;
+            color: yellow;
+            
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+        #submit{
+            padding: 4px 10px 4px 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(25, 25, 112);
+            color: yellow;
+        }
+        #submit:hover{
+            background-color: greenyellow;
+            cursor: pointer;
+            color: black;
+        }
+        #cancel{
+            padding: 4px 10px 4px 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(25, 25, 112);
+            color: yellow;
+        }
+        #cancel:hover{
+            background-color: red;
+            cursor: pointer;
+            color: white;
+        }

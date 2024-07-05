@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+
+* {
+    font-family: rethink sans;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+}
+
+div.heading {
+    padding: 20px;
+    background-color: rgb(25, 25, 112);
+    color: yellow;
+}
+
+#wm {
+    font-family: rethink sans;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+#title {
+    font-family: rethink sans;
+    font-size: 32px;
+    font-weight: 900;
+    /* margin: 20vw; */
+    margin: 0 auto;
+    color: yellow;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.tracking {
+    background-color: rgb(25, 25, 112);
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+#happy-coding {
+    font-size: 22px;
+    font-weight: 600;
+    color: rgb(13, 0, 132);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    gap: 30px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.note {
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-family: rethink sans;
+    color: rgb(25, 25, 112);
+    border: none;
+    outline-color: white;
+    outline-width: 1px;
+    background-color: gray;
+    box-sizing: border-box;
+}
+
+.note::placeholder {
+    color: silver;
+    opacity: 80%;
+}
+
+.note:hover,
+note:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 100ms ease-in-out;
+}
+
+.btn {
+    height: 200px;
+    border-color: white;
+    background-color: gray;
+    border-radius: 10px;
+    font-size: 70px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(25, 25, 112);
+    color: yellow;
+    transition: all 100ms ease-in-out;
+}

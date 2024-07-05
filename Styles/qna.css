@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+
+        * {
+            font-family: rethink sans;
+
+
+        }
+
+        body {
+            /* background-color: rgb(252, 220, 252); */
+            background-color: black;
+            margin: 0px;
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        div.heading {
+            /* width: 100%; */
+            padding: 20px;
+            background-color: rgb(13, 0, 132);
+            color: yellow;
+        }
+
+        #wm {
+            font-family: rethink sans;
+            font-size: 20px;
+            font-weight: 900;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p a{
+            color: green;
+        }
+
+        #title {
+            font-family: rethink sans;
+            font-size: 32px;
+            font-weight: 900;
+            /* margin: 20vw; */
+            margin: 26vw;
+            color: yellow;
+        }
+
+        .description {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            margin: 50px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        #happy-coding {
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(13, 0, 132);
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: yellow;
+        }
+
+        .section-center {
+            width: 90vw;
+            margin: 50px auto 0;
+            max-width: 820px;
+        }
+
+        .question {
+            background: rgb(13, 0, 132);
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 1rem 1rem 0 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .question-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: capitalize;
+            padding-bottom: 1rem;
+        }
+
+        .question-title p {
+            letter-spacing: 0.1rem;
+            color: yellow   ;
+            font-weight: bolder;
+        }
+
+        .question-btn {
+            font-size: 1.5rem;
+            background: transparent;
+            border-color: transparent;
+            cursor: pointer;
+            color: yellow;
+        }
+
+        .question-text {
+            /* padding: 1rem 0 1.5rem 0; */
+            padding: 5px 5px 5px 5px;
+            border-top: 1px solid yellow;
+        }
+
+        /* hide text */
+        .question-text {
+            display: none;
+        }
+
+        .show-text .question-text {
+            display: block;
+        }
+
+        .minus-icon {
+            display: none;
+        }
+
+        .show-text .minus-icon {
+            display: inline;
+        }
+
+        .show-text .plus-icon {
+            display: none;
+        }

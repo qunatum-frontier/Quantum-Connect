@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@300&family=Rethink+Sans&display=swap');
+
+        * {
+            font-family: rethink sans;
+
+
+        }
+
+        body {
+            /* background-color: rgb(252, 220, 252); */
+            background-color: black;
+            margin: 0px;
+            /* display: flex;
+            justify-content: center; */
+        }
+
+        h1 {
+            color: white;
+            font-size: 24px;
+        }
+
+        div.heading {
+            /* width: 100%; */
+            padding: 20px;
+            background-color: rgb(25, 25, 112);
+            color: yellow;
+        }
+
+        #wm {
+            font-family: rethink sans;
+            font-size: 20px;
+            font-weight: 900;
+
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #title {
+            font-family: rethink sans;
+            font-size: 32px;
+            font-weight: 900;
+            /* margin: 20vw; */
+            margin: 0 auto;
+            color: yellow;
+        }
+
+        .description {
+            font-size: 20px;
+            font-weight: 700;
+            color: white;
+            margin: 50px;
+            margin-bottom: 0px;
+            text-align: center;
+        }
+
+        #happy-coding{
+            font-size: 22px;
+            font-weight: 600;
+            color: rgb(13, 0, 132);
+        }
+
+        .form {
+            /* position: absolute; */
+            margin: 60px auto;
+            top: 30%;
+            /*don't use height because we might add more items to the list */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            width: 600px;
+            background-color: rgb(25, 25, 112);
+            color: yellow;
+            border-radius: 10px;
+        }
+
+        .input {
+            width: 100%;
+            box-sizing: border-box;
+            /* to make input same size as that of parents */
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            border: none;
+            font-size: 20px;
+            /* font-family: cursive; */
+        }
+
+        .input::placeholder {
+            color: lightgray;
+        }
+
+        .list {
+            padding: 0px;
+            margin: 0;
+        }
+
+        .list li {
+            list-style-type: none;
+            padding: 20px;
+            /* font-family: cursive; */
+            border-top: dotted;
+            border-color: darkgray;
+            position: relative;
+        }
+
+        .list li .fa-trash {
+            color: rgb(120, 3, 3);
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .list li .fa-check-square {
+            color: rgb(7, 93, 7);
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .list li.checked {
+            color: darkgray;
+            text-decoration: line-through;
+        }
+
+        .list li.checked .fa-check-square {
+            color: darkgray;
+        }
