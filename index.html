@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Connect - Home Page</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <!-- Navbar using bootstrap -->
+    <nav class="navbar sticky-top navbar-expand-lg nav-bg">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-title" href="index.html"> &lt/&gt Quantum Connect</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="reportissue.html">Report an Issue</a></li>
+                  <li><a class="dropdown-item" href="qna.html">FAQs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="special-features">
+                  Special Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pomodoro.html">Pomodoro Timer</a></li>
+                  <li><a class="dropdown-item" href="notes.html">Take Instant Notes</a></li>
+                  <li><a class="dropdown-item" href="todolist.html">Your To Do List</a></li>
+                  
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+    </nav>
+    <!-- Welcome message and Picture -->
+    <div id="container">
+        <div class=" box welcome" width="50%">
+            <h1 class="purple-head">Explore the Quantum Frontier</h1>
+            <p class="welcome-para">
+               Embark on a journey beyond the classical world and explore the fascinating realm of quantum mechanics. 
+                <br>Here, you'll discover the bizarre laws that govern the subatomic universe and unlock the potential of the next generation of computing.
+            </p>
+            <a href="roadmap.html"><button class="btn-roadmap">Roadmap</button></a>
+        </div>
+        <div class="box img" width="50%"><img src="Assets/logos/quantum-computing.jpg" alt="Coding" id="homeimg"></div>
+    </div>
+    <h2 id="q">Click on the desired concept and start learning NOW!</h2>
+    <!-- Brief Description to HTML CSS JS -->
+    <div class="description">
+        <!-- Create div description to arrange cards in a flex. -->
+        <div class="card-desc">
+            <div class="card-head">
+                <div class="card-logo">
+                    <img src="Assets/logos/quantum gate.png" alt="HTML">
+                </div>
+                <div class="capsule">
+                  <span><a href="Tutorial/html.html">QUANTUM GATES</a></span>
+                    
+                    <span>Manipulating Qubits</span>
+                    
+                    <span>Building Blocks of Quantum Circuits</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>A quantum gate or quantum logic gate is a rudimentary quantum circuit operating on a small number of qubits. They are the analogues for quantum computers to classical logic gates for conventional digital computers. Quantum logic gates are reversible, unlike many classical logic gates.</p>
+            </div>
+        </div>
+    
+        <div class="card-desc">
+            <div class="card-head">
+                <div class="card-logo">
+                    <img src="Assets/logos/quantum qubit.jpg" alt="css">
+                </div>
+                <div class="capsule">
+                  <span><a href="Tutorial Pages/css.html">QUBITS</a></span>
+                    
+                    <span>Basic Unit of Quantum Information</span>
+                    
+                    <span>Two-State Quantum-Mechanical System</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>A qubit uses the quantum mechanical phenomena of superposition to achieve a linear combination of two states. A classical binary bit can only represent a single binary value, such as 0 or 1. A qubit, however, can represent a 0, a 1, or any proportion of 0 and 1 in superposition of both states, with a certain probability of being a 0 and a certain probability of being a 1.</p>
+            </div>
+        </div>
+    
+        <div class="card-desc">
+            <div class="card-head">
+                <div class="card-logo">
+                    <img src="Assets/logos/Quantum superposition.jpg" alt="javascript">
+                </div>
+                <div class="capsule">
+                    <span><a href="Tutorial Pages/js.html">SUPERPOSITION</a></span>
+                    
+                    <span>Existing in Multiple States</span>
+                    
+                    <span>Used To Enable Quantum Parallelism</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>Quantum superposition is a fundamental principle of quantum mechanics that states that linear combinations of solutions to the Schrödinger equation are also solutions of the Schrödinger equation. This follows from the fact that the Schrödinger equation is a linear differential equation in time and position.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+      <!-- Create div description to arrange cards in a flex. -->
+      <div class="card-desc">
+          <div class="card-head">
+              <div class="card-logo">
+                  <img src="Assets/logos/quantum entanglement.png" alt="c++">
+              </div>
+              <div class="capsule">
+                <span><a href="Tutorial Pages/cpp.html">ENTANGLEMENT</a></span>
+                  
+                  <span>Spooky Action at a Distance</span>
+                  
+                  <span>When 2 Particles Link Together in a Certain Way No Matter The Distance</span>
+              </div>
+          </div>
+          <div class="content">
+            <p> The phenomenon of a group of particles being generated, interacting, or sharing spatial proximity in such a way that the quantum state of each particle of the group cannot be described independently of the state of the others, including when the particles are separated by a large distance.</p>
+          </div>
+      </div>
+  
+      <div class="card-desc">
+          <div class="card-head">
+              <div class="card-logo">
+                  <img src="Assets/logos/Quantum algorithms.png" alt="java">
+              </div>
+              <div class="capsule">
+                <span><a href="Tutorial Pages/java.html">QUANTUM ALGORITHMS</a></span>
+                  
+                  <span>Solving Complex Problems</span>
+                  
+                  <span>Quantum Circuit Model of Computation</span>
+              </div>
+          </div>
+          <div class="content">
+            <p>A quantum circuit that acts on some input qubits and terminates with a measurement. A quantum circuit consists of simple quantum gates, each of which acts on some finite number of qubits.</p>
+          </div>
+      </div>
+  
+      <div class="card-desc">
+          <div class="card-head">
+              <div class="card-logo">
+                  <img src="Assets/logos/Quantum-computing-featured-image.jpg" alt="python">
+              </div>
+              <div class="capsule">
+                  <span><a href="Tutorial Pages/python.html">QUANTUM COMPUTING APPLICATIONS</a></span>
+                  
+                  <span>Modern Use-Cases</span>
+                  
+                  <span>Rapidly Evolving</span>
+              </div>
+          </div>
+          <div class="content">
+            <p>Quantum computing finds many applications in widespread fields in modern times. Exponentially faster execution times have revolutionized various field and processes.</p>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

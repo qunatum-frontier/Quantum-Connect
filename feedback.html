@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <link rel="stylesheet" href="Styles/feedback.css">
+</head>
+
+<body>
+    <div class="heading">
+        <span id="wm"><a href="index.html" style="color: yellow;">&lt/&gt CodeHelp</a></span>
+        <span id="title" style="margin: 35vw;">FEEDBACK FORM<span>
+    </div>
+    <br>
+    <h2>Please fill this form to leave your feedback! <br> We appreciate your valuable suggestions.</h2>
+    <br>
+
+
+
+    <table align="center" cellspacing="0px" cellpadding="15px">
+        <form action="/submit">
+            <tr>
+                <td><label for="name">Enter your Name</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Your answer here"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Enter your e-mail address</label></td>
+                <td><input type="text" name="mail" id="mail" placeholder="Your answer here"></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Enter your contact number</label></td>
+                <td><input type="number" name="phno" id="phno" placeholder="Your answer here"></td>
+            </tr>
+            <!-- <tr>
+                <td>Rating</td>
+                <td>
+                    <label for="rate"><input type="radio" name="rate" id="rate">1</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">2</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">3</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">4</label>
+                    <label for="rate"><input type="radio" name="rate" id="rate">5</label>
+                </td>
+                
+            </tr> -->
+            <tr>
+                <td><label for="sugg">Any suggestions?</label></td>
+                <td><textarea name="sugg" id="sugg" cols="50" rows="5"></textarea></td>
+            </tr>
+            <!-- <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </td>
+            </tr> -->
+
+        </form>
+    </table>
+    <div id="container">
+        <div class="ratings-container" id="ratings-container">
+            <div class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166527.png" />
+                <small>Unhappy</small>
+            </div>
+            <div class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/1791/1791385.png" />
+                <small>Neutral</small>
+            </div>
+            <div class="rating">
+                <img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" />
+                <small>Satisfied</small>
+            </div>
+        </div>
+    </div>
+    <button class="btn" id="btn">Send Review</button>
+    <script src="JavaScript/feedback.js"></script>
+</body>
+
+</html>

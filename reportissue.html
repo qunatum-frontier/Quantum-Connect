@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an issue form</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <link rel="stylesheet" href="Styles/report.css">
+</head>
+<body>
+    <div class="heading">
+        <span id="wm"><a href="index.html" style="color: yellow;">&lt/&gt Quantum Connect</a></span>
+        <span id="title" style="margin: 27vw;">FACING ANY PROBLEMS?<span>
+    </div>
+    <br>
+    <h2>Report your issues here. All problems reported helps us make the website better. Thank you</h2>
+    <br>
+    <table align="center" cellspacing="0px" cellpadding="15px">
+        <form action="/submit">
+            <tr>
+                <td><label for="name">Enter your Name</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Your answer here" required></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Enter your e-mail address</label></td>
+                <td><input type="text" name="mail" id="mail" placeholder="Your answer here" required></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Enter your contact number</label></td>
+                <td><input type="number" name="phno" id="phno" placeholder="Your answer here" required></td>
+            </tr>
+            <tr>
+                <td>Under which domain does your poblem fall:</td>
+                <td>
+                    <select required>
+                        <option>Website loading issue</option>
+                        <option>Syntax error in reffered code</option>
+                        <option>Taking too long to load</option>
+                        <option></option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="details">What was the problem you were facing?</label></td>
+                <td><textarea name="sugg" id="sugg" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit" id="submit">Submit</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

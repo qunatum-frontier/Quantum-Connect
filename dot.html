@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHelp - Home Page</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <!-- Navbar using bootstrap -->
+    <nav class="navbar sticky-top navbar-expand-lg nav-bg">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-title" href="index.html">&lt/&gt CodeHelp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="contactus.html">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="reportissue.html">Report an Issue</a></li>
+                  <li><a class="dropdown-item" href="qna.html">FAQs</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="special-features">
+                  Special Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pomodoro.html">Pomodoro Timer</a></li>
+                  <li><a class="dropdown-item" href="notes.html">Take Instant Notes</a></li>
+                  <li><a class="dropdown-item" href="todolist.html">Your To Do List</a></li>
+                  <li><a class="dropdown-item" href="discussion.html">Discussions</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+    </nav>
+    <!-- Welcome message and Picture -->
+    <div id="container">
+        <div class=" box welcome" width="50%">
+            <h1 class="purple-head">Welcome to CodeHelp</h1>
+            <p class="welcome-para">
+                Hey coding enthusiast, Are you looking for a one stop solution to Web Development?
+                <br>We've got you covered. This website is the best coding resource for you to learn Web Development and become a profitable full stack web developer. So give a headstart to your coding journey right now!
+            </p>
+            <a href="roadmap.html"><button class="btn-roadmap">Roadmap</button></a>
+        </div>
+        <div class="box img" width="50%"><img src="Assets/home.webp" alt="Coding" id="homeimg"></div>
+    </div>
+    <h2 id="q">Click on the desired language and start learning NOW!</h2>
+    <!-- Brief Description to HTML CSS JS -->
+    <div class="description">
+        <!-- Create div description to arrange cards in a flex. -->
+        <div class="card-desc">
+            <div class="card-head">
+                <div class="card-logo">
+                    <img src="Assets/logos/html.png" alt="HTML">
+                </div>
+                <div class="capsule">
+                  <span><a href="Tutorial Pages/html.html">HYPERTEXT MARKUP LANGUAGE</a></span>
+                    
+                    <span>Structure Building</span>
+                    
+                    <span>Basic Building Block of a Web Page</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>HTML, short for HyperText Markup Language, serves as the backbone of the World Wide Web. It's a markup language used to create the structure and content of web pages. Imagine it as the framework that defines how information is displayed on a browser.</p>
+            </div>
+        </div>
+    
+        <div class="card-desc">
+            <div class="card-head">
+                <div class="card-logo">
+                    <img src="Assets/logos/css.jpg" alt="css">
+                </div>
+                <div class="capsule">
+                  <span><a href="Tutorial Pages/css.html">CASCADING STYLE SHEET</a></span>
+                    
+                    <span>Adding Style Elements to make Attractive</span>
+                    
+                    <span>Making the Web Page User Friendly</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>Cascading Style Sheets, or CSS, is a crucial component in web development, serving as the design language that brings visual appeal and aesthetic harmony to HTML-based web pages. It's a style sheet language used to describe the presentation of a document written in markup language like HTML.</p>
+            </div>
+        </div>
+    
+        <div class="card-desc">
+            <div class="card-head">
+                <div class="card-logo">
+                    <img src="Assets/logos/js.png" alt="javascript">
+                </div>
+                <div class="capsule">
+                    <span><a href="Tutorial Pages/js.html">JAVASCRIPT</a></span>
+                    
+                    <span>Adding logic to a Web Page</span>
+                    
+                    <span>Making the Web Page interactive</span>
+                </div>
+            </div>
+            
+            <div class="content">
+                
+                <p>JavaScript is a versatile scripting language primarily used for web development. It enables interactive and dynamic features on webpages, enhancing user experience. As a client-side language, it runs within a user's web browser, allowing manipulation of webpage content in real time.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="description">
+      <!-- Create div description to arrange cards in a flex. -->
+      <div class="card-desc">
+          <div class="card-head">
+              <div class="card-logo">
+                  <img src="Assets/logos/C++.png" alt="c++">
+              </div>
+              <div class="capsule">
+                <span><a href="Tutorial Pages/cpp.html">C++</a></span>
+                  
+                  <span>Complex and efficient</span>
+                  
+                  <span>Abstraction and algorithms</span>
+              </div>
+          </div>
+          <div class="content">
+            <p> A high-performance language favored for system programming, C++ offers direct hardware manipulation, making it indispensable for developing operating systems, game engines, and resource-intensive software where efficiency is paramount and precise control is crucial. Its versatility extends to embedded systems and scientific computing.</p>
+          </div>
+      </div>
+  
+      <div class="card-desc">
+          <div class="card-head">
+              <div class="card-logo">
+                  <img src="Assets/logos/java.png" alt="java">
+              </div>
+              <div class="capsule">
+                <span><a href="Tutorial Pages/java.html">JAVA</a></span>
+                  
+                  <span>Object-oriented</span>
+                  
+                  <span>Statically-typed</span>
+              </div>
+          </div>
+          <div class="content">
+            <p>Renowned for its "write once, run anywhere" mantra, Java excels in building scalable enterprise applications due to its strong emphasis on security, portability, and multithreading capabilities. Its rich ecosystem encompasses frameworks like Spring and Hibernate, empowering developers to create  high-performance solutions. </p>
+          </div>
+      </div>
+  
+      <div class="card-desc">
+          <div class="card-head">
+              <div class="card-logo">
+                  <img src="Assets/logos/python.png" alt="python">
+              </div>
+              <div class="capsule">
+                  <span><a href="Tutorial Pages/python.html">PYTHON</a></span>
+                  
+                  <span>Readable and Versatile</span>
+                  
+                  <span>Dynamically-typed</span>
+              </div>
+          </div>
+          <div class="content">
+            <p>Celebrated for its readability and flexibility, Python's extensive libraries and straightforward syntax empower developers in fields spanning AI, machine learning, web development, and automation, fostering a vibrant and inclusive programming community known for its adaptability and ease of learning.</p>
+          </div>
+      </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="icon" type="image/x-icon" href="Assets/CodeHelp.png">
+    <link rel="stylesheet" href="Styles/pomodoro.css">
+</head>
+
+<body>
+    <div class="heading">
+        <span id="wm"><a href="index.html" style="color: yellow;">&lt/&gt Quantum Connect</a></span>
+        <span id="title" style="margin: 35vw;">POMODORO TIMER<span>
+    </div>
+    <p class="description">One pomodoro session consists of 25 minutes and we recommend you to assign yourself small
+        tasks which you accomplish during the pomodoro session. We will keep track of the number of pomodoro sessions
+        you successfully encounter in one sitting. <span id="happy-coding">Happy Studying :)</span></p>
+    <div class="container">
+
+        <p class="timer" id="timer">25:00</p>
+        <div class="button-wrapper">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    <p class="description tracking">Number of pomodoros - <span id="count">0</span></p>
+    <script src="JavaScript/pomodoro.js"></script>
+</body>
+
+</html>
